@@ -1,0 +1,39 @@
+#banner {
+    background-image: url('../../imgs/piano-overhead.jpg');
+    background-repeat: no-repeat;
+    background-size: 240%;
+    background-position: 44% top;
+    height: 47vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    &::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: linear-gradient(to top, lightgrey 64%, transparent 96%);
+        opacity: 0.55;
+        mix-blend-mode: screen;
+    }
+
+    h2 {
+        position: relative;
+        top: 40%;
+        left: 10%;
+        width: 80%;
+        text-shadow: 2px 2px 12px white;
+        color: $color-dark;
+
+        &:last-child {
+            top: 35%;
+            font-size: 1.1rem;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+header {
+    background-color: transparent;
+    width: 100vw;
+}
+
+#header__wrapper {
+    font-family: $font-fancy;
+    color: $color-lightest;
+    font-size: 1.2rem;
+    height: $header-height;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+}
+
+#heading--main {
+    margin: 0;
+    padding: 0 28px;
+    align-self: center;
+    // text-shadow: 1px 1px 2px $color-primary;
+    color: $color-lightest;
+}
+
+nav {
+    align-self: center;
+    height: 36px;
+    width: 46px;
+    position: relative;
+    padding-right: 28px;
+}
+
+#nav__bars {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.nav__bar {
+    height: 2px;
+    width: 46px;
+    background-color: $color-lightest;
+    position: absolute;
+    left: 0;
+}
+
+.burger--top {
+    top: 0;
+}
+
+.burger--top,
+.burger--bottom {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.burger--middle-1,
+.burger--middle-2 {
+    top: 17px;
+    transition: transform .3s ease;
+    transform: rotate(0deg);
+}
+
+.burger--bottom {
+    bottom: 0;
+}
+
+.x-1 {
+    transform: rotate(45deg);
+}
+
+.x-2 {
+    transform: rotate(-45deg);
+}
+
+.disappear {
+    opacity: 0;
+}
+
+#nav__content {
+    height: calc(100vh - 72px);
+    width: 100vw;
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    right: 100vw;
+    background-color: $color-dark;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: right .3s ease;
+
+    div {
+        font-size: 1.6rem;
+        margin-top: 30px;
+
+        a {
+            color: $color-lightest;
+            text-decoration: none;
+        }
+    }
+}

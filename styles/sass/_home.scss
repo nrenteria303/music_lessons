@@ -18,7 +18,7 @@
         bottom: 0;
         right: 0;
         left: 0;
-        background-image: linear-gradient(to top, lightgrey 64%, transparent 96%);
+        background-image: linear-gradient(to top, lightgrey 64%, $color-dark 96%);
         opacity: 0.55;
         mix-blend-mode: screen;
     }

@@ -13,12 +13,24 @@ header {
     position: fixed;
     top: 0;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 #heading--main {
     margin: 0;
     padding: 0 28px;
     align-self: center;
-    // text-shadow: 1px 1px 2px $color-primary;
     color: $color-lightest;
+    font-size: 2.2rem;
+    transition: all .12s ease;
+}
+
+.header--fixed {
+    background-color: $color-dark;
+    border-bottom: 2px solid $color-light;
+
+    #heading--main {
+        font-size: 2rem;
+        color: $color-primary;
+    }
 }

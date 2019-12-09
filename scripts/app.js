@@ -3,6 +3,9 @@ const burgerMid1 = document.getElementsByClassName('nav__bar')[1];
 const burgerMid2 = document.getElementsByClassName('nav__bar')[2];
 const burgerBot = document.getElementsByClassName('nav__bar')[3];
 const navContent = document.getElementById('nav__content');
+const header = document.getElementById('header__wrapper');
+const body = document.body; // Safari
+const html = document.documentElement;
 var navShowing = false;
 
 function navTransform() {
@@ -21,3 +24,13 @@ function navTransform() {
     }
     navShowing = !navShowing;
 }
+
+function scrollDetect() {
+    if (body.scrollTop > 30 || html.scrollTop > 30) {
+      header.classList.add("header--fixed");
+    } else {
+        header.classList.remove("header--fixed");
+    }
+  }
+
+  window.onscroll = function() {scrollDetect()};

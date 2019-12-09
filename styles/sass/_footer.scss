@@ -1,0 +1,14 @@
+footer {
+    width: 100vw;
+    height: 140px;
+    background-color: $color-dark;
+    display: flex;
+
+    h4 {
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        color: $color-lightest;
+        font-size: 1.5rem;
+    }
+}

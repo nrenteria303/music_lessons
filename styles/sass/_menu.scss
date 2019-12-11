@@ -72,9 +72,17 @@ nav {
     box-sizing: border-box;
     transition: right .3s ease;
 
+    @media (max-height: 500px) {
+        padding: 0 0 0 80px;
+    }
+
     div {
         font-size: 1.6rem;
         margin-top: 30px;
+
+        @media (max-height: 500px) {
+            margin-top: 10px;
+        }
 
         a {
             color: $color-lightest;
@@ -89,4 +97,8 @@ nav {
     position: absolute;
     top: -30px;
     left: 60px;
+
+    @media (max-height: 500px) {
+        top: -10px;
+    }
 }

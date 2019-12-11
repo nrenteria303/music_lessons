@@ -23,6 +23,10 @@
         mix-blend-mode: screen;
     }
 
+    @media (max-height: 500px) {
+        height: 100vh;
+    }
+
     h2 {
         position: relative;
         top: 40%;
@@ -40,4 +44,57 @@
 
 main {
     margin-top: 300px;
+
+    @media (max-height: 500px) {
+        margin-top: 100vh;
+    }
+
+    .block__home {
+        height: 55vh;
+        display: flex;
+        justify-content: space-around;
+        border-top: solid 3px $color-dark;
+        flex-direction: column;
+
+        &:nth-child(2n+1) {
+            background-color: $color-primary;
+            color: $color-dark;
+        }
+
+        &:nth-child(2n) {
+            background-color: $color-dark;
+            color: $color-primary;
+            height: 45vh;
+        }
+
+        h1, h2 {
+            align-self: center;
+            text-align: center;
+            width: 70%;
+            font-size: 2.35rem;
+            margin: 0 auto;
+        }
+
+        #link--home--top {
+            text-align: center;
+            display: flex;
+            align-self: center;
+
+            a {
+                font-size: 1.2rem;
+                text-shadow: 0 0 3px $color-dark;
+                margin-top: 0;
+            }
+
+            a, #triangle--top {
+                color: $color-lightest
+            }
+
+            #triangle--top {
+                align-self: flex-end;
+                position: relative;
+                left: 8px;
+            }
+        }
+    }
 }

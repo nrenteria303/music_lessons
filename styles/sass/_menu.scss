@@ -1,7 +1,7 @@
 nav {
     align-self: center;
-    height: 36px;
-    width: 46px;
+    height: 28px;
+    width: 36px;
     position: relative;
     padding-right: 28px;
 }
@@ -14,7 +14,7 @@ nav {
 
 .nav__bar {
     height: 2px;
-    width: 46px;
+    width: 36px;
     background-color: $color-lightest;
     position: absolute;
     left: 0;
@@ -32,7 +32,7 @@ nav {
 
 .burger--middle-1,
 .burger--middle-2 {
-    top: 17px;
+    top: 13px;
     transition: all .3s ease;
     transform: rotate(0deg);
 }
@@ -59,7 +59,7 @@ nav {
 
 #nav__content,
 #nav__content--vertical {
-    height: calc(100vh - 72px);
+    height: calc(100vh - 65px);
 }
 
 #nav__content {

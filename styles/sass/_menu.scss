@@ -64,13 +64,14 @@ nav {
 
 #nav__content {
     width: 100vw;
-    position: fixed;
+    position: fixed; 
     bottom: 0;
     right: 100vw;
     background-image: radial-gradient(farthest-corner at 21% 11%, $color-dark 70%, white 200%);
     padding: 40px 40px 40px 80px;
     box-sizing: border-box;
     transition: right .3s ease;
+    z-index: 9;
 
     @media (max-height: 500px) {
         padding: 0 0 0 80px;

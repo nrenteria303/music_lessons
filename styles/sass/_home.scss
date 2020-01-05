@@ -25,8 +25,18 @@
         mix-blend-mode: screen;
     }
 
-    @media (max-height: 500px) {
+    @media (max-height: $mq-sm) {
         height: 100vh;
+    }
+
+    @media (min-width: $mq-md) {
+        background-size: 120%;
+        background-position: 44% 00%;
+    }
+
+    @media (min-width: $mq-xl) {
+        background-size: cover;
+        background-position: 44% 20%;
     }
 
     h2 {
@@ -119,11 +129,61 @@ main {
         display: block;
         border-top: 6px solid $color-primary;
         border-bottom: 6px solid $color-primary;
+
+        @media (min-width: 574px) {
+            border: 6px solid $color-primary;
+        }
     }
     
     p {
         font-size: 1.3rem;
         padding: 8px;
         margin: 0 auto;
+    }
+}
+
+#home__text-pic--1 {
+    height: 290px;
+    width: 100vw;
+    max-width: 435px;
+    background-image: url('../../imgs/boy-electric-guitar.jpg');
+    background-size: cover;
+    background-position: 50% 70%;
+    display: flex;
+    position: relative;
+    margin: 40px auto 60px;
+    border-top: 6px solid $color-dark;
+    border-bottom: 6px solid $color-dark;
+
+    &::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: $color-dark;
+        opacity: 0.5;
+        mix-blend-mode: hard-light;
+    }
+
+    @media (min-width: $mq-sm) {
+        border: 6px solid $color-dark;
+
+        p {
+            font-size: 1.45rem;
+        }
+    }
+    
+    p {
+        align-self: center;
+        padding: 0 30px;
+        text-align: center;
+        font-weight: bold;
+        color: $color-lightest;
+        text-shadow: 0 0 6px black;
+        z-index: 2;
     }
 }

@@ -28,12 +28,12 @@ function navTransform() {
 }
 
 function scrollDetect() {
-    if (body.scrollTop > 30 || html.scrollTop > 30) {
-      header.classList.add("header--fixed");
-    } else {
-        header.classList.remove("header--fixed");
-    }
+  if (body.scrollTop > 30 || html.scrollTop > 30) {
+    header.classList.add("header--fixed");
+  } else {
+      header.classList.remove("header--fixed");
   }
+}
 
   function showHeadings() {
     homeHeading1.classList.add("showing");
